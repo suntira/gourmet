@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Гурман</title>
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header_container _container">
+                    <div class="header__top">
+                        <div class="header__top-left">
+                            <div class="container_logo-text">
+                                <a href="#"><img src="img/icons/location.svg" alt="Location"></a>
+                                <p class="p-menu">г. Екатеринбург</p>
+                            </div>
+                            <div class="container_logo-text">
+                                <a href="#"><img src="img/icons/call.svg" alt="Call"></a>
+                                <p class="p-menu">+7 (922) 181 36 75</p>
+                                <p class="p-menu p-color-beige">(10:00–23:00)</p>
+                            </div>
+                        </div>
+                        <ul class="header__top-right">
+                                <li><a href="#" class="p-menu">Оплата и доставка</a></li>
+                                <li><a href="#" class="p-menu">О компании</a></li>
+                                <li><a href="#" class="p-menu">Контакты</a></li>
+                                <li><a href="#" class="p-menu">Статьи</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__bottom">
+                        <div class="header__bottom-left">
+                            <a href="#"><img src="img/icons/logo.svg" alt="Logo"></a>
+                            <button class="btn-catalog">
+                                <img src="img/icons/fish.svg" alt="Fish">
+                                <p class="p-main">Каталог</p>
+                            </button>
+                            <div class="search-form">
+                                <input class="search-form_txt p-main p-color-beige" type="text" placeholder="Найти товар">
+                                <button class="search-form_btn"><img src="img/icons/search.svg" alt="search"></button>
+                            </div>
+                        </div>
+                        <div class="header__bottom-right">
+                            <a href="#"><img src="img/icons/basket.svg" alt="basket"></a>
+                            <a href="#"><img src="img/icons/favourite.svg" alt="favourite"></a>  
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="slider">
+                    <div class="slider__content _container">
+                        <h1 class="slider__title p-color-beige">Если хочется чего-то,</h1>
+                        <h1 class="slider__title p-color-grey">но не понятно чего</h1>
+                        <p class="slider__subtitle p-color-grey">Знайте - морепродуктов!</p>
+                        <div class="slider__buttons">
+                            <button class="slider__button">Перейти в каталог</button>
+                                <div class="slider__controls">
+                            <button class="slider__control slider__control--prev" id="prevBtn"><img src="img/icons/button-arrow.png" alt="prev"></button>
+                            <button class="slider__control slider__control--next" id="nextBtn"><img src="img/icons/button-next.png" alt="next"></button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="marquee">
+                    <div class="marquee__inner">
+                        <span>Акция месяца – скидка 10% на всю консервацию</span>
+                        <span>Акция месяца – скидка 10% на всю консервацию</span>
+                        <span>Акция месяца – скидка 10% на всю консервацию</span>
+                        <span>Акция месяца – скидка 10% на всю консервацию</span>
+                    </div>
+                </div>
+                <div class="categories-block">
+                    <div class="categories__container _container"> 
+                        <div class="categories-header">
+                            <div class="categories-header-title">
+                            <p class="p-title">Популярные категории</p>
+                            </div>
+                            <div class="categories-header-more">
+                                <p class="p-caption">Все категории</p>
+                                <a  href="#" class="slider__control slider__control--next" id="nextBtn"><img src="img/icons/button-arrow-blue.png" alt="next"></a>
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <div class="categories__item categories__item--large">
+                                <p class="categories__title">Собственное производство</p>
+                                <img src="img/category/long-fish.png" alt="Собственное производство" class="categories__image">
+                            </div>
+                            <div class="categories__item categories__item--small">
+                                <p class="categories__title">Икра красная</p>
+                                <img src="img/category/caviar.png" alt="Икра красная" class="categories__image">
+                            
+                            </div>
+                            <div class="categories__item categories__item--small">
+                                <p class="categories__title">Консервация и деликатесы</p>
+                                <img src="img/category/shellfish.png" alt="Консервация и деликатесы" class="categories__image">
+                            </div>
+                            <div class="categories__item categories__item--small">
+                                <p class="categories__title">Мясо, птица</p>
+                                <img src="img/category/meet.png" alt="Мясо, птица" class="categories__image">
+                            </div>
+                            <div class="categories__item categories__item--small">
+                                <p class="categories__title">Рыба</p>
+                                <img src="img/category/fish.png" alt="Рыба" class="categories__image">
+                            </div>
+                            <div class="categories__item categories__item--large">
+                                <p class="categories__title">Морепродукты</p>
+                             <img src="img/category/shrimps.png" alt="Морепродукты" class="categories__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <button class="carousel-btn left">&lt;</button>
+                    <div class="carousel">
+                      <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Форель">
+                        <p>Форель охлажденная морская</p>
+                        <p>1 640 ₽/кг</p>
+                      </div>
+                      <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Сибас">
+                        <p>Сибас</p>
+                        <p>780 ₽/кг</p>
+                      </div>
+                      <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Палтус">
+                        <p>Палтус тушка без головы</p>
+                        <p>1 650 ₽/кг</p>
+                      </div>
+                      <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Лосось">
+                        <p>Лосось филе на коже с чешуей охл.</p>
+                        <p>3 250 ₽/кг</p>
+                      </div>
+                      <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Креветки">
+                        <p>Креветки тигровые без головы</p>
+                        <p>2 500 ₽/кг</p>
+                      </div>
+                    </div>
+                    <button class="carousel-btn right">&gt;</button>
+                  </div>
+            </main>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
