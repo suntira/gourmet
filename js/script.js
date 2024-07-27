@@ -26,6 +26,8 @@ nextBtn.addEventListener('click', () => {
 
 updateBackgroundImage();
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.carousel');
     const nextBtn = document.getElementById('carouselNext');
