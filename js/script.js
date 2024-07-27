@@ -23,5 +23,30 @@ nextBtn.addEventListener('click', () => {
     updateBackgroundImage();
 });
 
-// Инициализация первого изображения
+
 updateBackgroundImage();
+
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.carousel');
+    const nextBtn = document.getElementById('carouselNext');
+    const prevBtn = document.getElementById('carouselPrev');
+
+    if (!carousel || !nextBtn || !prevBtn) {
+        console.error('One or more elements not found');
+        return;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        console.log('Next button clicked');
+        const scrollDistance = 250 + 17; 
+        carousel.scrollBy({ left: scrollDistance, behavior: 'smooth' });
+        console.log(`Scrolled right by ${scrollDistance}px`);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        console.log('Previous button clicked');
+        const scrollDistance = 250 + 17; 
+        carousel.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
+        console.log(`Scrolled left by ${scrollDistance}px`);
+    });
+});

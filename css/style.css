@@ -13,7 +13,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: Raleway;
+    font-family: 'Raleway';
 }
 html,
 body {
@@ -49,6 +49,7 @@ input::placeholder {
     --white-color: #FFFFFF;
     --beige-light-color: #EEE4D3;
     --light-grey-color: #F8F5F0;
+    --border-card:#EDE8E1
 
 
 }
@@ -70,6 +71,8 @@ input::placeholder {
 }
 .p-menu {
     font-size: 0.875rem;
+}
+a.p-menu {
     color: var(--main-color);
 }
 .p-main{
@@ -96,7 +99,8 @@ input::placeholder {
     padding: 8px 0;
 }
 .header__bottom {
-    padding: 16px 0 ;
+    padding: 16px 0;
+    
 }
 .header__top-left {
     display: flex;
@@ -202,7 +206,7 @@ gap: 8px;
     height: 48px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: rgba(28,28,28,0);
+    background: none;
     transition: background-color 0.3s;
 } 
 .slider__control {
@@ -212,7 +216,7 @@ gap: 8px;
     border: 1px solid var(--blue-color);
 }
 .flipped {
-    transform: scaleX(-1); /*Отражение по горизонтали*/
+    transform: scaleX(-1); 
   }
 /*------------------------------------------------------*/
 /*---------------Бегущая строка------------------------*/
@@ -226,6 +230,7 @@ gap: 8px;
 .marquee__inner {
     display: flex;
     white-space: nowrap;
+    gap: 80px;
     animation: marquee 10s linear infinite;
 }
 .marquee__inner span {
@@ -247,13 +252,13 @@ gap: 8px;
 .categories-block {
     padding: 100px 0;
 }
-.categories-header {
+.categories-header, .carousel-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
 }
-.categories-header-more{
+.categories-header-more, .carousel-header-more{
     display: flex;
     align-items: center;
     gap: 8px;
@@ -305,6 +310,66 @@ gap: 8px;
     font-size: 1rem;
   }
 /*---------------------------------------*/
-/*---------------------------------------*/
-
+/*---------------Карты товаров Новинок------------------------*/
+.carousel{
+    display: flex;
+    gap: 17px;
+    overflow: hidden;
+}
+.product-card {
+    border: 1px solid var(--border-card);
+    border-radius: 24px;
+    padding: 16px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+.product-card__favorite {
+    display: flex;
+    justify-content: end;
+  }
+.product-card__favorite-button {
+    background: none;
+  }
+.product-card__favorite-button img {
+    width: 24px;
+    height: 24px;
+  }
+.product-card__availability {
+    color: var(--blue-color);
+    padding: 4px 2px 4px 6px;
+    margin-top: 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    background-color: var(--light-grey-color);
+    width: 77px;
+  }
+.product-card__description {
+    margin-top: 8px;
+  }
+.product-card__name {
+    font-size: 1rem;
+    font-weight: medium;
+    margin-bottom: 4px;
+    color: var(--main-color);
+  }
+.product-card__footer {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.product-card__price {
+    font-size: 1.25rem;
+    color: var(--blue-color);
+  }
+.product-card__button {
+    background-color: var(--blue-color);
+    font-weight: medium;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+  }
 /*---------------------------------------*/
