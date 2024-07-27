@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway');
+@font-face {
+	font-family: 'Champagne & Limousines';
+	src: url('/fonts/ChampagneLimousines-Bold.eot');
+	src: local('Champagne & Limousines Bold'), local('Champagne&Limousines-Bold'),
+		url('/fonts/ChampagneLimousines-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/ChampagneLimousines-Bold.woff') format('woff'),
+		url('/fonts/ChampagneLimousines-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -23,6 +33,9 @@ button {
     border: none;
     cursor: pointer;
 }
+button:hover {
+    opacity: 0.7;
+}
 input::placeholder {       
     color: var(--beige-color);
     font-size: 1rem; 
@@ -43,6 +56,7 @@ input::placeholder {
 .p-title {
     font-size: 1.875rem;
     font-weight: 700;
+    font-family: 'Champagne & Limousines';
 }
 .p-caption{
     font-size: 1.25rem;
@@ -54,6 +68,16 @@ input::placeholder {
 .p-color-grey {
     color: var(--light-grey-color);
 }
+.p-menu {
+    font-size: 0.875rem;
+    color: var(--main-color);
+}
+.p-main{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--white-color);
+}
+/*---------------------------------*/
 /*---------------------------------*/
 .wrapper {
     min-height: 100%;
@@ -62,7 +86,6 @@ input::placeholder {
     max-width: 80%;
     margin: 0 auto;
 }
-
 /*-------------------------------------------------------*/
 /*-------------------Шапка-------------------------*/
 .header__top, .header__bottom {
@@ -93,19 +116,9 @@ input::placeholder {
     align-items: center;
     gap: 8px;
 }
-.p-menu {
-    font-size: 0.875rem;
-    color: var(--main-color);
-}
 .header__top-right .p-menu:hover{
     color: var(--beige-color);
 }
-.p-main{
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--white-color);
-}
-
 .header__bottom-left {
     display: flex;
     gap: 24px;
@@ -131,12 +144,10 @@ input::placeholder {
     border: 1px solid var(--beige-light-color);
     display: inline-flex;
     gap: 24px;
-    padding: 0 16px;
-  
+    padding: 0 16px; 
 }
 .search-form_btn, .search-form_txt {
-    border: none;
-    
+    border: none; 
 }
 .search-form_txt {
     width: 568px;
@@ -158,16 +169,13 @@ input::placeholder {
     background-image: url('/img/main-block/main1.png'); 
     padding: 181px 0;
 }
-.slider__content {
- 
-}
 .slider__title {
     font-size: 3.125rem;
-    margin-bottom: 20px;
+    font-family: 'Champagne & Limousines';
 }
 .slider__subtitle {
     font-size: 1.125rem;
-    margin-bottom: 48px;
+    margin: 20px 0 48px 0;
     font-weight: 400;
     letter-spacing: 3px;
 }
@@ -189,12 +197,23 @@ input::placeholder {
 display: flex;
 gap: 8px;
 }
-.slider__control {
-    border: none;
+.slider__control, .slider__control-blue {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
     cursor: pointer;
     background-color: rgba(28,28,28,0);
     transition: background-color 0.3s;
+} 
+.slider__control {
+    border: 1px solid var(--light-grey-color);
 }
+.slider__control-blue {
+    border: 1px solid var(--blue-color);
+}
+.flipped {
+    transform: scaleX(-1); /*Отражаем по горизонтали*/
+  }
 /*------------------------------------------------------*/
 /*---------------Бегущая строка------------------------*/
 .marquee {
@@ -213,7 +232,7 @@ gap: 8px;
     display: inline-block;
     padding: 10px 20px;
     color: var(--beige-color);
-    font-size: 16px;
+    font-size: 1rem;
 }
 @keyframes marquee {
     from {
@@ -251,40 +270,39 @@ gap: 8px;
   }
   .categories__item {
     height: 312px;
-    background-image: url('/img/category/card-bg.png');
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    
   }
-  
+  .categories__item:hover {
+    transform: scale(1.01); /* Увеличение карточки при наведении */
+}
   .categories__item--large {
     flex: 1 1 calc(50% - 10px); 
+    background-image: url('/img/category/card-bg-large.png');
   }
-  
   .categories__item--small {
     flex: 1 1 calc(25% - 10px);
+    background-image: url('/img/category/card-bg-small.png');
   }
-  
   .categories__image {
     max-width: 100%;
-    min-width: 60%;
     height: auto;
     display: block;
   }
   .categories__item--large .categories__image {
     margin: 0 0 0 auto;
+    min-width: 50%;
   }
   .categories__item--small  .categories__image {
     margin: 0 auto;
+    min-width: 80%;
   }
   .categories__title {
     margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 1rem;
   }
 /*---------------------------------------*/
 /*---------------------------------------*/
