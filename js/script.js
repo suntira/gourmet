@@ -33,11 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('carouselNext');
     const prevBtn = document.getElementById('carouselPrev');
 
-    if (!carousel || !nextBtn || !prevBtn) {
-        console.error('One or more elements not found');
-        return;
-    }
-
     nextBtn.addEventListener('click', () => {
         console.log('Next button clicked');
         const scrollDistance = 250 + 17; 
