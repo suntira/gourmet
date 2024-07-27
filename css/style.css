@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway');
 @font-face {
 	font-family: 'Champagne & Limousines';
-	src: url('/fonts/ChampagneLimousines-Bold.eot');
+	src: url('../fonts/ChampagneLimousines-Bold.eot');
 	src: local('Champagne & Limousines Bold'), local('Champagne&Limousines-Bold'),
-		url('/fonts/ChampagneLimousines-Bold.eot?#iefix') format('embedded-opentype'),
-		url('/fonts/ChampagneLimousines-Bold.woff') format('woff'),
-		url('/fonts/ChampagneLimousines-Bold.ttf') format('truetype');
+		url('../fonts/ChampagneLimousines-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ChampagneLimousines-Bold.woff') format('woff'),
+		url('../fonts/ChampagneLimousines-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
