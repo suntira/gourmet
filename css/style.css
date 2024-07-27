@@ -173,7 +173,7 @@ a.p-menu {
     background-position: center; 
     position: relative;
     transition: background-image 0.5s ease-in-out;
-    background-image: url('/img/main-block/main1.png'); 
+    background-image: url('img/main-block/main1.png'); 
     padding: 181px 0;
 }
 .slider__title {
@@ -289,11 +289,11 @@ gap: 8px;
 }
   .categories__item--large {
     flex: 1 1 calc(50% - 10px); 
-    background-image: url('/img/category/card-bg-large.png');
+    background-image: url('../img/category/card-bg-large.png');
   }
   .categories__item--small {
     flex: 1 1 calc(25% - 10px);
-    background-image: url('/img/category/card-bg-small.png');
+    background-image: url('../img/category/card-bg-small.png');
   }
   .categories__image {
     max-width: 100%;

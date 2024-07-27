@@ -1,6 +1,6 @@
 const images = [
-    'url("/img/main-block/main1.png")',  
-    'url("/img/main-block/main2.png")'
+    'url("img/main-block/main1.png")',  
+    'url("img/main-block/main2.png")'
 ];
 
 let currentIndex = 0;
